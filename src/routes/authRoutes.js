@@ -6,7 +6,7 @@ const {
     refreshToken, 
     logout, 
     getMe
-} = require('../controllers/authController');
+} = require('../controllers/AuthController');
 
 // Validation Middleware (Joi)
 const { validateRegister, validateLogin } = require('../middleware/validator');
