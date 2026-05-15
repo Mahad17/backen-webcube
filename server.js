@@ -21,7 +21,10 @@ app.use(helmet());
 app.use(express.json()); 
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: [
+      "http://localhost:5173",
+      "https://rainbow-sunflower-acaf42.netlify.app",
+    ],
     credentials: true,
   })
 );
