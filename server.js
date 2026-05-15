@@ -21,7 +21,7 @@ app.use(helmet());
 app.use(express.json()); 
 app.use(
   cors({
-    origin: "*",
+    origin: "http://192.168.100.38:5173",
     credentials: true,
   })
 );
